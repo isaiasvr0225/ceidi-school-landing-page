@@ -1,0 +1,227 @@
+---
+import { Phone, Mail, MapPin, Info, Goal, Eye } from "lucide-astro";
+
+---
+
+<header class="border-b-2 border-black">
+  <div class="flex flex-row gap-8 bg-green-700 w-[100vw] p-4 md:justify-around ">
+    <div class="flex flex-col gap-2 self-center">
+      <div class="flex flex-row gap-2">
+        <Mail class="stroke-green-700 fill-white" />
+        <p class="text-white">ciravc@gmail.com</p>
+      </div>
+      <div class="flex flex-row gap-2">
+        <Phone class="stroke-green-700 fill-white" />
+        <span class="text-white">311 6975865</span>
+      </div>
+    </div>
+    <div class="flex flex-row gap-2">
+      <MapPin class="stroke-green-700 fill-white self-center h-12 w-12 md:h-7" />
+      <span class="text-white md:text-center self-center">Calle 8 # 5- 52 Centro, Guamal, Magdalena</span>
+    </div>
+  </div>
+  <nav class="mx-auto flex justify-between max-w-7xl items-center p-6 lg:px-1 lg:justify-between" aria-label="Global">
+    <div class="flex">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">CEIDI</span>
+        <img class="h-14 w-auto " src="/images/logo-ceidi.webp" alt="">
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button id="open-mobile-menu-btn" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <span class="sr-only">Open main menu</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+      <div class="relative">
+        <button id="navbar-dropdown-btn" type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" aria-expanded="false">
+          Somos CEIDI
+          <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        <!--
+          'Product' flyout menu, show/hide based on flyout menu state.
+
+          Entering: "transition ease-out duration-200"
+            From: "opacity-0 translate-y-1"
+            To: "opacity-100 translate-y-0"
+          Leaving: "transition ease-in duration-150"
+            From: "opacity-100 translate-y-0"
+            To: "opacity-0 translate-y-1"
+        -->
+        <div id="navbar-dropdown" class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+          <div class="p-4">
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+              <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <Info class="text-gray-600 group-hover:text-green-700"/>
+              </div>
+              <div class="flex-auto">
+                <a href="#who-are-we-section" class="block font-semibold text-gray-900">
+                  ¿Quiénes somos?
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Get a better understanding of your traffic</p>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+              <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <Goal class="text-gray-600 group-hover:text-green-700"/>
+              </div>
+              <div class="flex-auto">
+                <a href="#mission-section" class="block font-semibold text-gray-900">
+                  Misión
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Speak directly to your customers</p>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+              <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <Eye class="text-gray-600 group-hover:text-green-700"/>
+              </div>
+              <div class="flex-auto">
+                <a href="#vission-section" class="block font-semibold text-gray-900">
+                  Visión
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Your customers’ data will be safe and secure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="text-sm/6 font-semibold text-gray-900">Admisiones</a>
+      <a href="#" class="text-sm/6 font-semibold text-gray-900">Bienestar y Vida Estudiantíl</a>
+      <a href="#footer-section" class="text-sm/6 font-semibold text-gray-900">Contacto</a>
+    </div>
+  </nav>
+  <!-- Mobile menu, show/hide based on menu open state. -->
+  <div id="mobile-nav-menu" class="hidden lg:hidden" role="dialog" aria-modal="true">
+    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <div class="fixed inset-0 z-10"></div>
+    <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div class="flex items-center justify-between">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img class="h-8 w-auto" src="/images/logo-ceidi.webp" alt="">
+        </a>
+        <button id="close-mobile-menu-btn" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Close menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="space-y-2 py-6">
+            <div class="-mx-3">
+              <button id="mobile-navbar-dropdown-btn"  type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                Somos CEIDI
+                <!--
+                  Expand/collapse icon, toggle classes based on menu open state.
+
+                  Open: "rotate-180", Closed: ""
+                -->
+                <svg id="mobile-dropdown-chevron-icon" class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <!-- 'Product' sub-menu, show/hide based on menu state. -->
+              <div id="mobile-navbar-dropdown" class="hidden mt-2 space-y-2" id="disclosure-1">
+                <a href="#who-are-we-section" class="mobile-navbar-dropdown-item block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">¿Quiénes somos?</a>
+                <a href="#mission-section" class="mobile-navbar-dropdown-item block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Misión</a>
+                <a href="#vission-section" class="mobile-navbar-dropdown-item block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Visión</a>
+              </div>
+            </div>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Admisiones</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Bienestar y Vida Estudiantíl</a>
+            <a href="#footer-section" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contacto</a>
+          </div>
+          <div class="py-6">
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<script>
+import 'animate.css';
+
+let isNavbarDropdownShown: boolean = false;
+
+let isMobileNavbarDropdownShown: boolean = false;
+
+const onOpenMobileMenuBtn = (): void => {
+  document.querySelector('#mobile-nav-menu')
+          ?.classList.remove('hidden');
+}
+
+document.querySelector('#open-mobile-menu-btn')?.addEventListener('click', onOpenMobileMenuBtn);
+
+const onCloseMobileMenuBtn = (): void => {
+  document.querySelector('#mobile-nav-menu')
+          ?.classList.add('hidden');
+}
+
+document.querySelector('#close-mobile-menu-btn')?.addEventListener('click', onCloseMobileMenuBtn);
+
+const onNavbarDropdownBtn = () =>{
+  if(!isNavbarDropdownShown){
+    document.querySelector('#navbar-dropdown')
+          ?.classList.remove('hidden');
+  }else{
+    document.querySelector('#navbar-dropdown')
+          ?.classList.add('hidden');
+  }
+
+  isNavbarDropdownShown = !isNavbarDropdownShown;
+  
+}
+
+document.querySelector('#navbar-dropdown-btn')?.addEventListener('click', onNavbarDropdownBtn);
+
+const onMobileNavbarDropdownBtn = () =>{
+  if(!isMobileNavbarDropdownShown){
+    document.querySelector('#mobile-navbar-dropdown')
+          ?.classList.remove('hidden');
+    
+    document.querySelector('#mobile-dropdown-chevron-icon')
+          ?.classList.add('rotate-180');
+  }else{
+    document.querySelector('#mobile-navbar-dropdown')
+          ?.classList.add('hidden');
+    
+    document.querySelector('#mobile-dropdown-chevron-icon')
+          ?.classList.remove('rotate-180');
+  }
+
+  isMobileNavbarDropdownShown = !isMobileNavbarDropdownShown;
+  
+}
+
+document.querySelector('#mobile-navbar-dropdown-btn')?.addEventListener('click', onMobileNavbarDropdownBtn);
+
+const onNavbarDropdownItem = () =>{
+  
+    document.querySelector('#mobile-nav-menu')
+          ?.classList.add('hidden');
+
+    document.querySelector('#mobile-navbar-dropdown')
+          ?.classList.add('hidden');
+
+    document.querySelector('#mobile-dropdown-chevron-icon')
+          ?.classList.remove('rotate-180');
+}
+
+document.querySelector('.mobile-navbar-dropdown-item')?.addEventListener('click', onNavbarDropdownItem);
+</script>
