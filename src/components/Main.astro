@@ -1,7 +1,14 @@
 ---
-import { BookHeart, Lightbulb, SmilePlus, Sparkles } from "lucide-astro";
-
-
+import {
+  Bird,
+  BookHeart,
+  Flag,
+  Gamepad,
+  Languages,
+  Lightbulb,
+  SmilePlus,
+  Sparkles,
+} from "lucide-astro";
 ---
 
 <main class="flex flex-col">
@@ -89,7 +96,7 @@ import { BookHeart, Lightbulb, SmilePlus, Sparkles } from "lucide-astro";
     class="flex flex-col bg-white w-[90vw] self-center pt-4 pb-20 mb-20 shadow-xl rounded-b-lg"
   >
     <h2
-      class="text-3xl text-center font-semibold tracking-tight text-gray-900 mt-4 sm:text-7xl"
+      class="text-3xl text-center font-semibold tracking-tight text-gray-900 mt-4 sm:text-5xl"
     >
       ¿Quiénes somos?
     </h2>
@@ -148,10 +155,13 @@ import { BookHeart, Lightbulb, SmilePlus, Sparkles } from "lucide-astro";
       ></path></svg
     >
   </div>
-  <section id="mission-section" class="flex justify-center bg-gray-900 w-[100vw] self-center p-4">
+  <section
+    id="mission-section"
+    class="flex justify-center bg-gray-900 w-[100vw] self-center p-4"
+  >
     <div class="w-[90vw] shadow-xl rounded-b-lg p-4 self-center">
       <h2
-        class="text-3xl text-center font-semibold tracking-tight text-white mt-4 sm:text-7xl"
+        class="text-3xl text-center font-semibold tracking-tight text-white mt-4 sm:text-5xl"
       >
         Misión
       </h2>
@@ -170,20 +180,27 @@ import { BookHeart, Lightbulb, SmilePlus, Sparkles } from "lucide-astro";
           básica primaria.
         </p>
         <article class="flex flex-row justify-center gap-3 mt-6 mb-6">
-          <div class="h-32 w-32 bg-green-700 rounded-full flex justify-center shadow-md shadow-green-700">
-            <BookHeart class="self-center stroke-white h-16 w-16"/>
+          <div
+            class="h-28 w-28 bg-green-700 rounded-full flex justify-center shadow-md shadow-green-700"
+          >
+            <BookHeart class="self-center stroke-white h-12 w-12" />
           </div>
-          <div class="h-32 w-32 bg-green-700 rounded-full flex justify-center shadow-md shadow-green-700">
-            <Lightbulb class="self-center stroke-white h-16 w-16"/>
+          <div
+            class="h-28 w-28 bg-green-700 rounded-full flex justify-center shadow-md shadow-green-700"
+          >
+            <Flag class="self-center stroke-white h-12 w-12" />
           </div>
         </article>
       </div>
     </div>
   </section>
-  <section id="vission-section" class="flex justify-center bg-gray-900 w-[100vw] self-center p-4">
+  <section
+    id="vission-section"
+    class="flex justify-center bg-gray-900 w-[100vw] self-center p-4"
+  >
     <div class="w-[90vw] shadow-xl rounded-b-lg p-4 mb-8 self-center">
       <h2
-        class="text-3xl text-center font-semibold tracking-tight text-white mt-4 sm:text-7xl"
+        class="text-3xl text-center font-semibold tracking-tight text-white mt-4 sm:text-5xl"
       >
         Visión
       </h2>
@@ -203,14 +220,153 @@ import { BookHeart, Lightbulb, SmilePlus, Sparkles } from "lucide-astro";
           a nuestro municipio.
         </p>
         <article class="flex flex-row justify-center gap-3 mt-6 mb-8">
-          <div class="h-32 w-32 bg-green-700 rounded-full flex justify-center shadow-md shadow-green-700">
-            <SmilePlus class="self-center stroke-white h-16 w-16"/>
+          <div
+            class="h-28 w-28 bg-green-700 rounded-full flex justify-center shadow-md shadow-green-700"
+          >
+            <SmilePlus class="self-center stroke-white h-12 w-12" />
           </div>
-          <div class="h-32 w-32 bg-green-700 rounded-full flex justify-center shadow-md shadow-green-700">
-            <Sparkles class="self-center stroke-white h-16 w-16"/>
+          <div
+            class="h-28 w-28 bg-green-700 rounded-full flex justify-center shadow-md shadow-green-700"
+          >
+            <Sparkles class="self-center stroke-white h-12 w-12" />
           </div>
         </article>
       </div>
     </div>
   </section>
+  <!--Divisor -->
+  <div class="bg-gray-900">
+    <svg
+      id=""
+      preserveAspectRatio="xMidYMax meet"
+      class="svg-separator sep3"
+      viewBox="0 0 1600 100"
+      style="display: block;"
+      data-height="100"
+    >
+      <path
+        class=""
+        style="opacity: 1;fill: #273a4c;"
+        d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z"
+      ></path>
+      <path
+        class=""
+        style="opacity: 1;fill: #2a3f54;"
+        d="M-40,83.627C20.307,83.627,20.058,44,80,44s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,14H-60V84L-40,83.627z"
+      ></path>
+      <path
+        class="fill-green-700"
+        style=""
+        d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z"
+      ></path></svg
+    >
+  </div>
+  <section
+    id="student-welfare"
+    class="flex flex-col justify-center bg-green-700 pb-12"
+  >
+      <h2
+        class="text-3xl text-center font-semibold tracking-tight text-white mt-4 sm:text-5xl"
+      >
+        Bienestar y Vida Estudiantíl
+      </h2>
+      <p
+        class="mt-4 text-center text-pretty text-lg font-medium text-gray-300 self-center sm:text-xl/8 prose lg:prose-xl"
+      >
+        CEIDI busca constantemente los mejores programas y estrategias para
+        potenciar el bienestar de sus estudiantes.
+      </p>
+      <div class="flex flex-col gap-2 mt-5 self-center lg:flex-row">
+        <article
+          class="flex flex-col justify-center bg-white shadow-xl rounded-md w-[80vw] px-2 py-5 self-center lg:justify-start lg:w-[30vw] lg:h-[415px]"
+        >
+          <div
+            class="h-20 w-20 bg-gray-900 rounded-full flex justify-center self-center shadow-md shadow-gray-900"
+          >
+            <Gamepad class="self-center stroke-white h-12 w-12" />
+          </div>
+          <h3
+            class="text-xl text-center mt-4 self-center font-semibold tracking-tight text-gray-900 sm:text-3xl lg:text-center"
+          >
+            Aprender jugando
+          </h3>
+          <p
+            class="mt-4 mb-5 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl"
+          >
+            En nuestra institución, el juego no es solo una actividad; es el
+            motor que impulsa el desarrollo infantil.
+          </p>
+        </article>
+        <article
+          class="flex flex-col bg-white shadow-xl rounded-md w-[80vw] px-2 py-5 self-center lg:w-[30vw] lg:h-[415px]"
+        >
+          <div
+            class="h-20 w-20 bg-gray-900 rounded-full flex justify-center self-center shadow-md shadow-gray-900"
+          >
+            <Bird class="self-center stroke-white h-12 w-12" />
+          </div>
+          <h3
+            class="text-xl mt-4 text-center self-center font-semibold tracking-tight text-gray-900 sm:text-3xl lg:text-center"
+          >
+            La naturaleza como tercer maestro
+          </h3>
+          <p
+            class="mt-4 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl"
+          >
+            Motiva a niños y niñas a descubrir el mundo a través de sus
+            sentidos, potencia el pensamiento creativo y los invita a conocerse
+            mejor a sí mismos para aprovechar todo su potencial a través de la
+            exploración y el juego
+          </p>
+        </article>
+        <article
+          class="flex flex-col bg-white shadow-xl rounded-md w-[80vw] px-4 py-5 self-center lg:w-[30vw] lg:h-[415px]"
+        >
+          <div
+            class="h-20 w-20 bg-gray-900 rounded-full flex justify-center self-center shadow-md shadow-gray-900"
+          >
+            <Languages class="self-center stroke-white h-12 w-12" />
+          </div>
+          <h3
+            class="text-xl mt-4 text-center self-center font-semibold tracking-tight text-gray-900 sm:text-3xl lg:text-center"
+          >
+            El Inglés como segundo idioma
+          </h3>
+          <p
+            class="mt-4 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl lg:text-center"
+          >
+            Contamos con métodos para la enseñanza del idioma extranjero,
+            motivando al estudiante a explorar más allá de las fronteras
+            lingüísticas.
+          </p>
+        </article>
+      </div>
+  </section>
+  <!--Divisor -->
+  <div class="bg-green-700">
+    <svg
+      id=""
+      preserveAspectRatio="xMidYMax meet"
+      class="svg-separator sep3"
+      viewBox="0 0 1600 100"
+      style="display: block;"
+      data-height="100"
+    >
+      <path
+        class=""
+        style="opacity: 1;fill: #273a4c;"
+        d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z"
+      ></path>
+      <path
+        class=""
+        style="opacity: 1;fill: #2a3f54;"
+        d="M-40,83.627C20.307,83.627,20.058,44,80,44s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,14H-60V84L-40,83.627z"
+      ></path>
+      <path
+        class="fill-white"
+        style=""
+        d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z"
+      ></path></svg
+    >
+  </div>
 </main>
