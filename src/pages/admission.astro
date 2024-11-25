@@ -1,0 +1,151 @@
+---
+import Footer from "@components/Footer.astro";
+import Form from "@components/Form.astro";
+import Layout from "@layouts/Layout.astro";
+import {
+  ArrowLeft,
+  Bird,
+  ClipboardList,
+  Gamepad,
+  Languages,
+} from "lucide-astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <!-- <header class="bg-green-700 py-5">
+    <nav class="flex w-[80vw] justify-between pl-2">
+      <ArrowLeft class="stroke-white self-center" />
+      <h2
+        class="text-2xl text-center font-semibold tracking-tight text-white sm:text-5xl"
+      >
+        Admisión CEIDI
+      </h2>
+    </nav>
+  </header> -->
+  <section class="bg-gray-900">
+    <a href=".." class="flex pl-5 pt-5"><ArrowLeft class="stroke-white" /></a>
+
+    <h2
+      class="text-xl text-center font-semibold tracking-tight text-white pt-2 sm:text-3xl"
+    >
+      Oferta Académica
+    </h2>
+    <section
+      id="student-welfare"
+      class="flex flex-col justify-center pb-12 px-4"
+    >
+      <p
+        class="mt-4 text-center text-pretty text-lg font-medium text-gray-300 self-center sm:text-xl/8 prose lg:prose-xl"
+      >
+        CEIDI ofrece educación en <span class="text-white">2 niveles</span>,
+        ambos en jornada única, de calendario A.
+      </p>
+      <div class="flex flex-col gap-2 mt-5 self-center lg:flex-row">
+        <article
+          class="flex flex-col justify-center bg-white shadow-xl rounded-md w-[80vw] px-2 py-5 self-center lg:justify-start lg:w-[30vw] lg:h-[400px]"
+        >
+          <svg
+            class="self-center"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 1792 1792"
+            ><path
+              fill="#ffffff"
+              class="fill-gray-900"
+              d="M336 0h1120q139 0 237.5 98.5T1792 336v1120q0 139-98.5 237.5T1456 1792H336q-139 0-237.5-98.5T0 1456V336Q0 197 98.5 98.5T336 0m709 387q0-48-17-68t-62-20H747q-19 48-76.5 110.5T568 488q-18 6-33.5 30T519 563v98q0 30 22 52t53 22q20 0 38.5-5t30.5-10.5t27-19t20.5-19t20-23.5t16.5-20v557H591q-30 0-52 21.5t-22 52.5v149q0 31 22 53t52 22h609q31 0 53-22t22-53v-149q0-31-22-52.5t-53-21.5h-155z"
+            ></path></svg
+          >
+          <h3
+            class="text-xl text-center mt-4 self-center font-semibold tracking-tight text-gray-900 sm:text-2xl lg:text-center"
+          >
+            Preescolar:
+          </h3>
+          <ul>
+            <li>
+              <p
+                class="mt-4 mb-5 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl"
+              >
+                - Pre jardín
+              </p>
+            </li>
+            <li>
+              <p
+                class="mt-4 mb-5 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl"
+              >
+                - Jardín
+              </p>
+            </li>
+            <li>
+              <p
+                class="mt-4 mb-5 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl"
+              >
+                - Transición
+              </p>
+            </li>
+          </ul>
+        </article>
+        <article
+          class="flex flex-col bg-white shadow-xl rounded-md w-[80vw] px-2 py-5 self-center lg:w-[30vw] lg:h-[400px]"
+        >
+          <svg
+            class="self-center"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 1792 1792"
+            ><path
+              fill="#ffffff"
+              class="fill-gray-900"
+              d="M1455 0H336Q197 0 98.5 98.5T0 336v1119q0 139 98 237.5t238 98.5h1119q139 0 237.5-98.5T1791 1455V336q0-139-98.5-237.5T1455 0M346 1437v-11q0-70 59.5-155.5T557 1108t200.5-144T967 857q86-35 126.5-71t41.5-80q1-67-77-119t-157-52q-46 0-104 25t-107 66.5t-68 84.5q-3 6-6.5 14.5T611 736t-3.5 6t-3.5 4t-5 1t-7 0t-10.5-1H404q-30 0-48-26t-10-51q55-168 212-269t354-101q87 0 173.5 26t156.5 73t113.5 119.5T1399 674q0 81-24 145t-65.5 106.5t-92 75.5t-109 60t-112 52.5t-106.5 61t-86 76.5h595q19 0 33.5 16.5t14.5 39.5v130q0 23-14.5 39.5T1399 1493H394q-19 0-33.5-16.5T346 1437"
+            ></path></svg
+          >
+          <h3
+            class="text-xl mt-4 text-center self-center font-semibold tracking-tight text-gray-900 sm:text-2xl lg:text-center"
+          >
+            Básica primaria
+          </h3>
+          <ul>
+            <li>
+              <p
+                class="mt-4 mb-5 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl"
+              >
+                - 1° grado
+              </p>
+            </li>
+            <li>
+              <p
+                class="mt-4 mb-5 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl"
+              >
+                - 2° grado
+              </p>
+            </li>
+            <li>
+              <p
+                class="mt-4 mb-5 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl"
+              >
+                - 3° grado
+              </p>
+            </li>
+            <li>
+              <p
+                class="mt-4 mb-5 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl"
+              >
+                - 4° grado
+              </p>
+            </li>
+            <li>
+              <p
+                class="mt-4 mb-5 text-center text-pretty text-lg font-medium text-gray-400 self-center sm:text-xl/8 prose lg:prose-xl"
+              >
+                - 5° grado
+              </p>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </section>
+  <Form />
+  <Footer />
+</Layout>
